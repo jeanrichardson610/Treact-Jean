@@ -851,7 +851,7 @@ nav {
 }
 
 .review__img {
-  width: 40%;
+  width: 50%;
 }
 
 .review__wrapper {
@@ -1023,7 +1023,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .footer__column {
