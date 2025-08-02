@@ -15,7 +15,7 @@ html {
 
 .row {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -177,7 +177,7 @@ nav {
 .nav__logo {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 40px;
   font-size: 24px;
 }
 
@@ -189,7 +189,8 @@ nav {
 }
 
 .nav__logo--img {
-  height: 50px;
+  height: 40px;
+  width: 40px;
 }
 
 .nav__container {
@@ -289,7 +290,7 @@ nav {
 .header__column {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 40%;
 }
 
 .header__column--customer-title {
@@ -312,6 +313,7 @@ nav {
 .header__column--para {
   color: #243e63;
   margin: 32px 0;
+  
 }
 
 .header__email {
@@ -362,7 +364,7 @@ nav {
 }
 
 .header__img--wrapper {
-  width: 40vw;
+  width: 60%;
 }
 
 .header__img {
@@ -1029,8 +1031,8 @@ footer {
 .footer__column {
   display: flex;
   flex-direction: column;
-  width: calc(100% / 5);
-  align-items: center;
+  
+  align-items: flex-start;
   justify-content: start;
 }
 
@@ -1119,7 +1121,7 @@ footer {
 
 /*SMALL PHONES, TABLETS, DESKTOPS*/
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   h1 {
     font-size: 36px;
   }
@@ -1532,6 +1534,7 @@ footer {
     padding: 0 16px;
     text-align: center;
     align-items: center;
+    margin-top: 48px;
   }
 
   .footer__column:last-child {
