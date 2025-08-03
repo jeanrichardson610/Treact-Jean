@@ -1188,6 +1188,19 @@ footer {
     max-width: 512px;
     margin: 0 auto;
   }
+
+  .header__column--customer {
+    padding-right: 0px;
+  }
+
+    .header__img--wrapper {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+    margin-top: 48px;
+  }
+}
   
   .header__email {
     width: 100%;
@@ -1268,7 +1281,7 @@ footer {
   footer {
     padding: 80px 32px;
   }
-}
+
 
 @media (max-width: 768px) {
   .container {
