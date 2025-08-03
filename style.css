@@ -71,7 +71,7 @@ img {
 }
 
 button {
-  cursor: not-allowed;
+  cursor: pointer;
   border: none;
 }
 
@@ -200,6 +200,8 @@ nav {
 }
 
 /*MOBILE MENU*/
+
+
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
@@ -208,54 +210,52 @@ nav {
   color: #243e63;
   cursor: pointer;
   display: none;
-  transition: color 300ms ease;
-}
-
-.btn__menu:hover {
-  color: #6415ff;
+  
 }
 
 .menu__backdrop {
-  position: fixed;
-  background-color: #321963;
+  position: absolute;
+  background-color: white;
   top: 0;
   left: 0;
   right: 0;
-  height: 378px;
+  bottom: 0;
+  height: 368px;
   margin: 24px 16px;
   padding: 32px;
   border: 1px solid rgb(229, 231, 235);
   border-radius: 8px;
-  z-index: 4;
-  justify-content: center;
+  z-index: 100;
+  display: flex;
   align-items: center;
-  opacity: 0;
-  transition: all 300ms ease;
+  justify-content: center;
   visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
+  transform: translate(100%);
 }
+
+
+.menu--open {
+  height: 40px;
+  overflow: hidden;
+}
+
 
 .menu--open .menu__backdrop {
   visibility: visible;
   opacity: 1;
-}
-
-.btn__menu--close {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  padding: 8px;
-  color: #e5e7eb;
-  scale: 0.6;
+  transform: translate(0);
 }
 
 .menu__links {
-  width: 100%;
-  height: 100%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  
 }
+
 
 .menu__list {
   margin: 8px;
@@ -263,11 +263,26 @@ nav {
 }
 
 .menu__link {
-  color: #e5e7eb;
-  font-size: 18px;
+  color: #1a202c;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 8px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: black;
+  scale: 0.6;
 }
 
 .menu__link--primary {
+  color: #f7fafc;
   padding: 12px 32px;
   margin: 8px 0;
   font-size: 18px;
@@ -277,6 +292,10 @@ nav {
   background-color: #e5e7eb;
   color: #6415ff;
   text-decoration: none;
+}
+
+.btn__menu:hover {
+  color: #6415ff;
 }
 
 /*HEADER*/
