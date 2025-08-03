@@ -1241,6 +1241,7 @@ footer {
 
   /*features*/
   .features__wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -1266,6 +1267,7 @@ footer {
 
   /*quality*/
   .quality__wrapper {
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -1280,12 +1282,23 @@ footer {
   }
 
   .quality__img--wrapper {
+    display: flex;
     width: 100%;
-    position: relative;
     max-width: 448px;
+    position: relative;
     margin: 0 auto;
-    margin-bottom: 36px;
+    margin-bottom: 64px;
     
+  }
+
+  .quality__img {
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 4px;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
   }
 
   .quality__grid {
@@ -1304,8 +1317,16 @@ footer {
   }
 
   /*steps*/
-  .steps__wrapper {
+
+#steps .row {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .steps__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
   }
@@ -1347,6 +1368,7 @@ footer {
 
   /*values*/
   .values__wrapper {
+    display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
@@ -1369,6 +1391,7 @@ footer {
   }
 
   .values__list {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -1385,6 +1408,7 @@ footer {
 
   /*pricing*/
   .plan__wrapper {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -1392,7 +1416,7 @@ footer {
   /**/
   .Testimonials__wrapper {
     display: flex;
-
+    flex-direction: column;
     align-items: center;
     text-align: center;
   }
@@ -1471,21 +1495,115 @@ footer {
   }
 
   /*quality*/
+
+  .quality__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quality__descript {
+    text-align: center;
+    width: 100%;
+    max-width: 448px;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .quality__img--wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 448px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    
+  }
+
+  .quality__img {
+    display: flex;
+    position: relative;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 4px;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
+  }
+
+
   .quality__grid {
     transform: translateX(7vw) translateY(4.5vh) scaleX(1) scaleY(1);
   }
 
   /*steps*/
+  
+  #steps .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .steps__img--wrapper {
+    width: 100%;
+    max-width: 448px;
+    position: relative;
+    
+    margin-bottom: 36px;
+  }
+
+  .steps__text {
+    text-align: center;
+    padding: 0;
+    align-items: center;
+    margin-top: 64px;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step__description {
+    margin: 0;
+  }
+
+  .step__num {
+    margin-bottom: 12px;
+  }
+
   .steps__grid {
     transform: translateX(41.8vw) translateY(455vh) scaleX(1) scaleY(1);
   }
+
+  .steps__img {
+    width: 100%;
+    max-width: 448px;
+  }
+
 
   /*pricing*/
   .plans__blob {
     transform: translateX(-35%) translateY(8130px) scaleX(1) scaleY(1);
   }
 
-  /*testimonialss*/
+  /*testimonials*/
+  .Testimonials__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
   .testimonials__client {
     flex-direction: column;
     align-items: center;
