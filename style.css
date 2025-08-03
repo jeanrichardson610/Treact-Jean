@@ -683,9 +683,11 @@ nav {
 
 /*PRICING*/
 
+
+
 .pricing__wrapper {
   display: flex;
-  flex-direction: column  ;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -701,23 +703,25 @@ nav {
 }
 
 .plan__wrapper {
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
   z-index: 1;
+  
 }
 
 .plan {
-  width: calc(100% / 3.3);
-  margin-top: 64px;
+  width: 100%;
+  max-width: 384px;
+  margin: 64px 32px 0 0;
   padding-top: 8px;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
-    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-  z-index: 1;
-  background: white;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   position: relative;
+  z-index: 100;
+  background: #fff;
 }
 
 .plan__stripe {
@@ -1200,7 +1204,7 @@ footer {
     margin: 0 auto;
     margin-top: 48px;
   }
-}
+
   
   .header__email {
     width: 100%;
@@ -1250,19 +1254,14 @@ footer {
     text-align: center;
   }
 
-  .plan__wrapper {
-    display: flex;
+   .plan__wrapper {
     flex-direction: column;
     align-items: center;
   }
 
-  .plan {
-    
-    width: 100%;
-    max-width: 384px;
-    
-  }
 
+
+ 
   .CTA__row {
     flex-direction: column;
     
@@ -1282,6 +1281,7 @@ footer {
     padding: 80px 32px;
   }
 
+}
 
 @media (max-width: 768px) {
   .container {
